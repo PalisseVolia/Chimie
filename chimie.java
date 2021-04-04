@@ -7,6 +7,7 @@ public class chimie {
         System.out.println("\nChoisissez une incertitude pour " + tip + ".");
         System.out.println("0 - 0.03 ml");
         System.out.println("1 - 0.02 ml");
+        System.out.println("2 - 0.10 ml");
         while ((a > 2)||(a < 0)) {
             a = Lire.i();
             if ((a > 2)||(a < 0)) {
@@ -19,6 +20,9 @@ public class chimie {
                 break;
             case 1:
                 b= 0.02;
+                break;
+            case 2:
+                b= 0.1;
                 break;
             default:
                 break;
